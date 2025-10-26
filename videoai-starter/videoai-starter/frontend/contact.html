@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - VideoAI</title>
+  <link rel="stylesheet" href="assets/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <h2>VideoAI</h2>
+      </div>
+      <ul class="nav-menu">
+        <li class="nav-item"><a href="/#home" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="/#features" class="nav-link">Features</a></li>
+        <li class="nav-item"><a href="/#how-it-works" class="nav-link">How It Works</a></li>
+        <li class="nav-item"><a href="/#testimonials" class="nav-link">Testimonials</a></li>
+        <li class="nav-item"><a href="/login" class="nav-link login-btn">Login</a></li>
+        <li class="nav-item"><a href="/signup" class="nav-link signup-btn">Sign Up</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Contact Us Section -->
+  <section class="contact-us" style="margin-top: 40px; margin-bottom: 40px;">
+    <div class="container">
+      <h1>Contact Us</h1>
+      <p>We’d love to hear from you! Please reach out using the form below or email us directly at <a href="mailto:support@videoai.com">support@videoai.com</a>.</p>
+      
+      <div class="contact-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-top: 40px;">
+        <!-- Contact Form -->
+        <form action="mailto:support@videoai.com" method="POST" style="display: flex; flex-direction: column; gap: 20px;">
+          <input type="text" name="name" placeholder="Your Name" required style="padding: 15px; border-radius: 8px; border: 1px solid #ddd; font-size: 16px;">
+          <input type="email" name="email" placeholder="Your Email" required style="padding: 15px; border-radius: 8px; border: 1px solid #ddd; font-size: 16px;">
+          <input type="text" name="subject" placeholder="Subject" required style="padding: 15px; border-radius: 8px; border: 1px solid #ddd; font-size: 16px;">
+          <textarea name="message" rows="6" placeholder="Your Message" required style="padding: 15px; border-radius: 8px; border: 1px solid #ddd; font-size: 16px;"></textarea>
+          <button type="submit" class="generate-btn" style="width: fit-content;">Send Message</button>
+        </form>
+
+        <!-- Contact Info -->
+        <div class="contact-info" style="display: flex; flex-direction: column; gap: 20px; font-size: 1rem;">
+          <div>
+            <i class="fas fa-envelope" style="color: #007bff; margin-right: 10px;"></i>
+            <strong>Email:</strong> support@videoai.com
+          </div>
+          <div>
+            <i class="fas fa-phone" style="color: #007bff; margin-right: 10px;"></i>
+            <strong>Phone:</strong> +91 123 456 7890
+          </div>
+          <div>
+            <i class="fas fa-map-marker-alt" style="color: #007bff; margin-right: 10px;"></i>
+            <strong>Address:</strong> 123 AI Street, Tech City, India
+          </div>
+          <div style="margin-top: 20px;">
+            <strong>Follow Us:</strong>
+            <div style="display: flex; gap: 15px; margin-top: 10px;">
+              <a href="#" style="color: #007bff; font-size: 1.5rem;"><i class="fab fa-facebook"></i></a>
+              <a href="#" style="color: #007bff; font-size: 1.5rem;"><i class="fab fa-twitter"></i></a>
+              <a href="#" style="color: #007bff; font-size: 1.5rem;"><i class="fab fa-linkedin"></i></a>
+              <a href="#" style="color: #007bff; font-size: 1.5rem;"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-links">
+          <a href="/privacy">Privacy Policy</a>
+          <a href="/terms">Terms of Service</a>
+          <a href="/contact">Contact Us</a>
+          <a href="/faq">FAQ</a>
+        </div>
+        <p>&copy; 2025 VideoAI. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

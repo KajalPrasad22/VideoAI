@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VideoAI - Transform YouTube Videos Into Complete Learning Resources</title>
+    <link rel="stylesheet" href="assets/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>VideoAI</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="/#home" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="/#features" class="nav-link">Features</a></li>
+                <li class="nav-item"><a href="/#how-it-works" class="nav-link">How It Works</a></li>
+                <li class="nav-item"><a href="/#testimonials" class="nav-link">Testimonials</a></li>
+                <li class="nav-item"><a href="/login" class="nav-link login-btn">Login</a></li>
+                <li class="nav-item"><a href="/signup" class="nav-link signup-btn">Sign Up</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1>Transform YouTube Videos Into Complete Learning Resources</h1>
+                <p>Our AI-powered tool analyzes any YouTube video to create summaries, key points, mind maps, and quizzes in seconds. Perfect for students, educators, and lifelong learners.</p>
+                
+                <div class="url-input-container">
+                    <input type="text" id="youtube-url" placeholder="Enter the YouTube video link here (e.g., https://www.youtube.com/watch?v=example)" class="url-input">
+                    <button onclick="generateContent()" class="generate-btn">Generate</button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="https://via.placeholder.com/600x400/007bff/ffffff?text=AI+Video+Analysis" alt="AI Video Analysis">
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2>Made for students</h2>
+                <p>Our powerful AI engine extracts the most valuable information from any YouTube video, organizing it into formats that enhance learning and retention.</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <h3>Video Summary</h3>
+                    <p>Get concise summaries that capture the main ideas and concepts from any video, saving you time while ensuring you don't miss important information.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-list"></i>
+                    </div>
+                    <h3>Key Points</h3>
+                    <p>Extract the most important points and takeaways from videos, perfect for quick review or creating study guides for exams and presentations.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-project-diagram"></i>
+                    </div>
+                    <h3>Mind Maps</h3>
+                    <p>Visualize concepts and their relationships with automatically generated mind maps that help you understand complex topics at a glance.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-question-circle"></i>
+                    </div>
+                    <h3>Quizzes</h3>
+                    <p>Test your understanding with automatically generated quizzes including multiple-choice, fill-in-the-blank, and true/false questions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="how-it-works">
+        <div class="container">
+            <h2>How It Works</h2>
+            <p>Getting started with VideoAI is simple and takes just seconds.</p>
+            
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Paste YouTube Link</h3>
+                    <p>Copy and paste any YouTube video URL into the input field on our homepage.</p>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Generate Content</h3>
+                    <p>Click the Generate button and wait a few seconds while our AI processes the video.</p>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Access Resources</h3>
+                    <p>View and download your summary, key points, mind maps, and quizzes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2>Why Users Love VideoAI</h2>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <p>"VideoAI has completely changed how I study online courses. I can now process a 2-hour lecture in minutes and focus on the key concepts."</p>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <strong>Sarah Johnson</strong>
+                            <span>Graduate Student</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <p>"As a professor, I use VideoAI to create study materials for my students. The mind maps are especially helpful for visualizing complex topics."</p>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <strong>Dr. Michael Chen</strong>
+                            <span>University Professor</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <p>"I'm a lifelong learner who watches educational content daily. VideoAI helps me retain information and organize knowledge from various sources."</p>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <strong>David Rodriguez</strong>
+                            <span>Software Engineer</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results Section (Hidden by default) -->
+    <section id="results" class="results" style="display: none;">
+        <div class="container">
+            <div class="results-header">
+                <button onclick="goBackHome()" class="back-btn">← Back to Home</button>
+                <h2>Complete Video Summary</h2>
+                <div class="video-info">
+                    <div class="video-thumbnail">
+                        <img id="video-thumbnail" src="" alt="Video Thumbnail">
+                        <div class="play-button">▶</div>
+                    </div>
+                    <div class="video-details">
+                        <h3 id="video-title">Video Title</h3>
+                        <p id="video-channel">Channel Name</p>
+                        <p id="video-duration">Duration: 0:00</p>
+                        <p id="processed-time">Processed on: --</p>
+                        <div class="content-quality">
+                            <span>Content Quality: </span>
+                            <span id="quality-score">--</span>%
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tab Navigation -->
+            <div class="tab-container">
+                <button class="tab-btn active" onclick="openTab(event, 'summary')">Summary</button>
+                <button class="tab-btn" onclick="openTab(event, 'key-points')">Key Points</button>
+                <button class="tab-btn" onclick="openTab(event, 'mind-map')">Mind Maps</button>
+                <button class="tab-btn" onclick="openTab(event, 'quizzes')">Quizzes</button>
+            </div>
+
+            <!-- Tab Content -->
+            <div id="summary" class="tab-content active">
+                <div class="content-actions">
+                    <button onclick="downloadPDF('summary')" class="action-btn">
+                        <i class="fas fa-download"></i> Download as PDF
+                    </button>
+                    <button onclick="copyToClipboard('summary')" class="action-btn">
+                        <i class="fas fa-copy"></i> Copy to Clipboard
+                    </button>
+                    <button onclick="shareContent()" class="action-btn">
+                        <i class="fas fa-share"></i> Share
+                    </button>
+                </div>
+                <div id="summary-content" class="content-text">
+                    <!-- Summary content will be inserted here -->
+                </div>
+            </div>
+
+            <div id="key-points" class="tab-content">
+                <div class="content-actions">
+                    <button onclick="downloadPDF('key-points')" class="action-btn">
+                        <i class="fas fa-download"></i> Download as PDF
+                    </button>
+                    <button onclick="copyToClipboard('key-points')" class="action-btn">
+                        <i class="fas fa-copy"></i> Copy to Clipboard
+                    </button>
+                </div>
+                <div class="sorting-options">
+                    <button onclick="sortKeyPoints('importance')" class="sort-btn active">By Importance</button>
+                    <button onclick="sortKeyPoints('chronological')" class="sort-btn">Chronological</button>
+                </div>
+                <div id="key-points-content" class="content-text">
+                    <!-- Key points content will be inserted here -->
+                </div>
+            </div>
+
+            <div id="mind-map" class="tab-content">
+                <div class="content-actions">
+                    <button onclick="downloadPDF('mind-map')" class="action-btn">
+                        <i class="fas fa-download"></i> Download as Image
+                    </button>
+                </div>
+                <div class="mind-map-controls">
+                    <button onclick="zoomIn()" class="control-btn">🔍+</button>
+                    <button onclick="zoomOut()" class="control-btn">🔍-</button>
+                    <select onchange="changeLayout()" class="layout-select">
+                        <option value="radial">Radial</option>
+                        <option value="tree">Tree</option>
+                        <option value="network">Network</option>
+                    </select>
+                </div>
+                <div id="mind-map-content" class="mind-map-container">
+                    <!-- Mind map will be rendered here -->
+                </div>
+            </div>
+
+            <div id="quizzes" class="tab-content">
+                <div class="content-actions">
+                    <button onclick="downloadPDF('quizzes')" class="action-btn">
+                        <i class="fas fa-download"></i> Download as PDF
+                    </button>
+                    <button onclick="printQuizzes()" class="action-btn">
+                        <i class="fas fa-print"></i> Print Quizzes
+                    </button>
+                </div>
+                <div class="quiz-format-tabs">
+                    <button onclick="showQuizFormat('multiple-choice')" class="format-btn active">Multiple Choice</button>
+                    <button onclick="showQuizFormat('fill-in-the-blank')" class="format-btn">Fill in the Blank</button>
+                    <button onclick="showQuizFormat('true-false')" class="format-btn">True / False</button>
+                </div>
+                <div id="quizzes-content" class="content-text">
+                    <!-- Quizzes content will be inserted here -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Loading Overlay -->
+    <div id="loading-overlay" class="loading-overlay" style="display: none;">
+        <div class="loading-content">
+            <div class="loading-spinner"></div>
+            <h3>Processing Your Video...</h3>
+            <p>Our AI is analyzing the content and generating your learning materials.</p>
+            <div class="loading-progress">
+                <div id="progress-bar" class="progress-bar"></div>
+            </div>
+            <p id="loading-status">Initializing...</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-links">
+                    <a href="/privacy">Privacy Policy</a>
+                    <a href="/terms">Terms of Service</a>
+                    <a href="/contact">Contact Us</a>
+                    <a href="/faq">FAQ</a>
+                </div>
+                <p>&copy; 2025 VideoAI. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/script.js"></script>
+</body>
+</html>
