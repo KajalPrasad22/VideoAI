@@ -1,0 +1,1 @@
+ VideoAI is an AI-powered web app built with FastAPI that takes a YouTube video link and generates summaries, key points, mind maps, and quizzes — helping users learn faster and retain key information from videos efficiently.
